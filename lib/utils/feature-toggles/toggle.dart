@@ -24,7 +24,7 @@ class Toggle {
     Toggle._flagDefaults = flagDefaults ?? {};
 
     if (kDebugMode) {
-      print('Toggly.init');
+      print('Toggle.init');
     }
 
     return await Toggle.refresh();
@@ -68,7 +68,7 @@ class Toggle {
     }
 
     if (kDebugMode) {
-      print('Toggly._evaluateFeatureGate - ${jsonEncode(gate)}');
+      print('Toggle._evaluateFeatureGate - ${jsonEncode(gate)}');
     }
 
     return isEnabled;
