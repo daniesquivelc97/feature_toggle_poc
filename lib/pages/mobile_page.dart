@@ -20,17 +20,10 @@ class _MobilePageState extends State<MobilePage> {
     await Toggle.init(
       flagDefaults: {
         'FlutterCardKey': true,
-        'IonicKey': true,
-        'ReactKey': true,
+        'IonicCardKey': true,
+        'ReactCardKey': true,
       },
     );
-    // await Toggly.init(
-    //   flagDefaults: {
-    //     'FlutterCardKey': true,
-    //     'IonicKey': true,
-    //     'ReactKey': true,
-    //   },
-    // );
   }
 
   @override
@@ -43,25 +36,13 @@ class _MobilePageState extends State<MobilePage> {
           child: CustomCard(text: 'Flutter'),
         ),
         FeatureToggle(
-          featureKeys: ['IonicKey'],
+          featureKeys: ['IonicCardKey'],
           child: CustomCard(text: 'Ionic'),
         ),
         FeatureToggle(
-          featureKeys: ['ReactKey'],
+          featureKeys: ['ReactCardKey'],
           child: CustomCard(text: 'React'),
         ),
-        // Feature(
-        //   featureKeys: ['FlutterCardKey'],
-        //   child: CustomCard(text: 'Flutter'),
-        // ),
-        // Feature(
-        //   featureKeys: ['IonicKey'],
-        //   child: CustomCard(text: 'Ionic'),
-        // ),
-        // Feature(
-        //   featureKeys: ['ReactKey'],
-        //   child: CustomCard(text: 'React'),
-        // ),
       ],
     );
   }
